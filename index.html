@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متوسطه دوره دوم دخترانه کد 071</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            font-family: 'Open Sans', sans-serif;
+            color: #2c3e50;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #2c3e50;
+            padding: 1.5rem 5%;
+            position: relative;
+        }
+
+        .school-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            position: absolute;
+            left: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .school-code {
+            background: #48dbfb;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #48dbfb;
+        }
+
+        .logo {
+            height: 45px;
+            transition: transform 0.3s;
+        }
+
+        .logo:hover {
+            transform: rotate(10deg);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 10%;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            margin: 2rem 5%;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .about-section {
+            background: white;
+            padding: 3rem 5%;
+            border-radius: 20px;
+            margin: 2rem 5%;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .programs-section {
+            background: white;
+            padding: 3rem 5%;
+            border-radius: 20px;
+            margin: 2rem 5%;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .program-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .program-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 2rem;
+            transition: transform 0.3s;
+            border: 1px solid #e7e7e7;
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .program-icon {
+            font-size: 2.5rem;
+            color: #48dbfb;
+            margin-bottom: 1rem;
+        }
+
+        .program-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin: 1rem 0;
+        }
+
+        .staff-section {
+            background: white;
+            padding: 3rem 5%;
+            border-radius: 20px;
+            margin: 2rem 5%;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .staff-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .staff-card {
+            background: #fff3e6;
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: transform 0.3s;
+            border: 1px solid #ffe6cc;
+        }
+
+        .staff-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .staff-icon {
+            font-size: 2rem;
+            color: #ff6b6b;
+            margin-bottom: 1rem;
+        }
+
+        .staff-name {
+            font-size: 1.2rem;
+            color: #4a4a4a;
+            margin: 0.5rem 0;
+        }
+
+        .staff-role {
+            font-size: 0.9rem;
+            color: #7a7a7a;
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: right;
+            padding: 2rem 5%;
+            margin-top: 4rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-icon {
+            color: #48dbfb;
+        }
+
+        @media (max-width: 768px) {
+            .school-info {
+                position: static;
+                transform: none;
+                margin-bottom: 1rem;
+            }
+            
+            .logo {
+                height: 35px;
+                margin: 1rem 0;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            footer {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="school-info">
+            <span class="school-code">کد مدرسه: 071</span>
+            <img src="images/logo.png" alt="لوگوی مدرسه" class="logo">
+        </div>
+        
+        <nav>
+            <div class="nav-links">
+                <a href="#home">خانه</a>
+                <a href="#about">درباره ما</a>
+                <a href="#programs">برنامه</a>
+                <a href="#staff">هیئت علمی</a>
+                <a href="#contact">تماس</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>متوسطه دوره دوم دخترانه دولتی کد 071</h2>
+        <p>با 98 دانشآموز پرتلاش و بیش از 3 دهه سابقه درخشان در آموزش</p>
+        <a href="#staff" class="cta-button">معرفی هیئت علمی</a>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h3>درباره مدرسه ما</h3>
+                <p>با بیش از 35 سال تجربه درخشان در آموزش متوسطه دوم، مدرسه دخترانه کد 071 به عنوان یکی از مراکز برتر آموزشی استان فارس شناخته میشود. ما با:</p>
+                <ul>
+                    <li>✔️ هیئت علمی مجرب و متخصص</li>
+                    <li>✔️ امکانات روزآمد آموزشی</li>
+                    <li>✔️ فضای سبز و متعادل یادگیری</li>
+                    <li>✔️ برنامهریزیهای آموزشی نوین</li>
+                </ul>
+                <p>متعهد به تربیت نسلی باسواد و خلاق هستیم.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/school.jpg" alt="تصویر مدرسه" class="responsive-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="programs-section" id="programs">
+        <h3 class="section-title">برنامه های آموزشی نوین</h3>
+        <div class="program-cards">
+            <div class="program-card">
+                <i class="fas fa-paint-brush program-icon"></i>
+                <div class="program-title">کار با فتوشاپ</div>
+                <p>آموزش طراحی گرافیکی و ویرایش تصاویر حرفهای</p>
+            </div>
+            
+            <div class="program-card">
+                <i class="fas fa-video program-icon"></i>
+                <div class="program-title">کار با پرمایر</div>
+                <p>دوره تخصصی ویرایش ویدیو و تولید محتوای دیجیتال</p>
+            </div>
+            
+            <div class="program-card">
+                <i class="fas fa-palette program-icon"></i>
+                <div class="program-title">هنر دیجیتال</div>
+                <p>طراحی دیجیتال، نقاشی الکترونیکی و انیمیشن سازی</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="staff-section" id="staff">
+        <h3 class="section-title">هیئت علمی و معاونین</h3>
+        <div class="staff-cards">
+            <div class="staff-card">
+                <i class="fas fa-user-tie staff-icon"></i>
+                <div class="staff-name">خانم پوررستمی</div>
+                <div class="staff-role">مدیر مدرسه</div>
+            </div>
+            
+            <div class="staff-card">
+                <i class="fas fa-chalkboard-teacher staff-icon"></i>
+                <div class="staff-name">خانم دالمند</div>
+                <div class="staff-role">معاون آموزشی</div>
+            </div>
+            
+            <div class="staff-card">
+                <i class="fas fa-laptop-code staff-icon"></i>
+                <div class="staff-name">خانم معتمد</div>
+                <div class="staff-role">معلم دوازدهم کامپیوتر</div>
+            </div>
+            
+            <div class="staff-card">
+                <i class="fas fa-book-reader staff-icon"></i>
+                <div class="staff-name">خانم راستگو</div>
+                <div class="staff-role">معلم یازدهم کامپیوتر</div>
+            </div>
+            
+            <div class="staff-card">
+                <i class="fas fa-calculator staff-icon"></i>
+                <div class="staff-name">خانم پورغلام</div>
+                <div class="staff-role">معلم دهم کامپیوتر</div>
+            </div>
+            
+            <div class="staff-card">
+                <i class="fas fa-language staff-icon"></i>
+                <div class="staff-name">خانم پورعروجی</div>
+                <div class="staff-role">معلم زبان انگلیسی</div>
+            </div>
+            
+            <div class="staff-card">
+                <i class="fas fa-book-open staff-icon"></i>
+                <div class="staff-name">آقای احمدی</div>
+                <div class="staff-role">معلم ادبیات</div>
+            </div>
+            
+            <div class="staff-card">
+                <i class="fas fa-landmark staff-icon"></i>
+                <div class="staff-name">خانم باقری</div>
+                <div class="staff-role">معلم تاریخ</div>
+            </div>
+            
+            <div class="staff-card">
+                <i class="fas fa-globe-americas staff-icon"></i>
+                <div class="staff-name">آقای سروی</div>
+                <div class="staff-role">معلم جغرافیا و محیط زیست</div>
+            </div>
+            
+            <div class="staff-card">
+                <i class="fas fa-dumbbell staff-icon"></i>
+                <div class="staff-name">خانم پر</div>
+                <div class="staff-role">معلم تربیت بدنی</div>
+            </div>
+            
+            <div class="staff-card">
+                <i class="fas fa-chart-line staff-icon"></i>
+                <div class="staff-name">آقای نظری</div>
+                <div class="staff-role">معلم حسابداری</div>
+            </div>
+            
+            <div class="staff-card">
+                <i class="fas fa-user-graduate staff-icon"></i>
+                <div class="staff-name">خانم عسکری</div>
+                <div class="staff-role">معلم دوازدهم حسابداری</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h3 class="section-title">تماس با ما</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <span>استان فارس، ناحیه زرین دشت، خیابان شهرداری، میدان ادینه روبروی شهرداری</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <a href="tel:07153743578" class="contact-link">071-53743578</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-school contact-icon"></i>
+                <span>متوسطه دوره دوم دخترانه دولتی فارس زرین دشت</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-code contact-icon"></i>
+                <span>کد مدرسه: 071</span>
+            </div>
+        </div>
+        <p class="copyright">© 1403 تمامی حقوق محفوظ است</p>
+    </footer>
+</body>
+</html>
